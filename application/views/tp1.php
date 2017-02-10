@@ -13,7 +13,7 @@ foreach($css_files as $file): ?>
 </head>
 <body>
 	<div>
-		<a href='../'>Page d'accueil</a> |
+		<a href='../../'>Page d'accueil</a> |
 		<a href='<?php echo site_url('tp1/documents')?>'>Documents</a> |
 		<a href='<?php echo site_url('tp1/utilisateurs')?>'>Utilisateurs</a> |
 		<a href='<?php echo site_url('tp1/emprunts')?>'>Emprunts</a> |

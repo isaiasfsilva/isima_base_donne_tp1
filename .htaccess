@@ -1,11 +1,1 @@
 AddHandler application/x-httpd-php54 .php
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php/$1 [L]  
-RedirectMatch 301 /index.php/(.*)/$ /$1
-
-
-RewriteCond %{THE_REQUEST} ^.*/index\.php 
-RewriteRule ^(.*)index.php$ /$1 [R=301,L] 
-
