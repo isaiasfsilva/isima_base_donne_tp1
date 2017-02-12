@@ -80,10 +80,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 documentation technique - <span>beta v0.1</span></a></code>
 
 		<p>Pour avoir accès à la documentation:</p>
-		<code><a href="#">documentation.pdf</a></code>
+		<code><a href="https://github.com/isaiasfsilva/isima_base_donne_tp1/blob/master/documentation.pdf" target="_blank">documentation.pdf</a></code>
 
 		<p>Vous pouvez aussi visualiser le code dans le GitHub \o/:</p>
-		<code><a href="https://github.com/isaiasfsilva/isima_base_donne_tp1">https://github.com/isaiasfsilva/isima_base_donne_tp1</a></code>
+		<code><a href="https://github.com/isaiasfsilva/isima_base_donne_tp1" target="_blank">https://github.com/isaiasfsilva/isima_base_donne_tp1</a></code>
 
 		<p>Vous pouvez aussi visualiser la page personelle du acteur:</p>
 		<code><a href="http://isaiasfaria.com.br" target="_blank">Isaías Faria - Site personnel - www.isaiasfaria.com.br</a></code>
