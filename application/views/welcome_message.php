@@ -76,7 +76,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p>Ceci est le premier travail pour la discipline de base de données d'ISIMA ZZ2 - 2017</p>
 
 		<p>Pour avoir accès au système:</p>
-		<code><a href="tp1/documents">Gestion d'une documentation technique - <span>beta v0.1</span></a></code>
+		<code><a href="index.php/tp1/documents">Gestion d'une 
+documentation technique - <span>beta v0.1</span></a></code>
 
 		<p>Pour avoir accès à la documentation:</p>
 		<code><a href="#">documentation.pdf</a></code>
