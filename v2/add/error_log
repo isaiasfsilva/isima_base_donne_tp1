@@ -1,0 +1,61 @@
+[20-Feb-2017 05:52:04 America/Chicago] PHP Warning:  include_once(../classes/dbniv_config.php): failed to open stream: No such file or directory in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 2
+[20-Feb-2017 05:52:04 America/Chicago] PHP Warning:  include_once(): Failed opening '../classes/dbniv_config.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 2
+[20-Feb-2017 05:52:04 America/Chicago] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 101
+[20-Feb-2017 05:52:06 America/Chicago] PHP Warning:  include_once(../classes/dbniv_config.php): failed to open stream: No such file or directory in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 2
+[20-Feb-2017 05:52:06 America/Chicago] PHP Warning:  include_once(): Failed opening '../classes/dbniv_config.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 2
+[20-Feb-2017 05:52:06 America/Chicago] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 101
+[20-Feb-2017 05:52:50 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'anee' in 'field list'' in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php:102
+Stack trace:
+#0 /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php(102): PDOStatement->execute()
+#1 {main}
+  thrown in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 102
+[20-Feb-2017 05:52:55 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'anee' in 'field list'' in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php:102
+Stack trace:
+#0 /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php(102): PDOStatement->execute()
+#1 {main}
+  thrown in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 102
+[20-Feb-2017 05:53:16 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'anee' in 'field list'' in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php:102
+Stack trace:
+#0 /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php(102): PDOStatement->execute()
+#1 {main}
+  thrown in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 102
+[20-Feb-2017 05:53:18 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'anee' in 'field list'' in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php:102
+Stack trace:
+#0 /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php(102): PDOStatement->execute()
+#1 {main}
+  thrown in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 102
+[20-Feb-2017 05:53:50 America/Chicago] PHP Fatal error:  Call to undefined method PDOStatement::inserted_id() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 27
+[20-Feb-2017 05:54:13 America/Chicago] PHP Fatal error:  Call to undefined method PDOStatement::insert_id() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 27
+[20-Feb-2017 05:55:56 America/Chicago] PHP Fatal error:  Call to undefined method PDOStatement::insert_id() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 27
+[20-Feb-2017 05:56:07 America/Chicago] PHP Fatal error:  Call to undefined method PDOStatement::close() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 29
+[20-Feb-2017 05:56:31 America/Chicago] PHP Fatal error:  Call to undefined method PDOStatement::close() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 29
+[20-Feb-2017 05:56:40 America/Chicago] PHP Fatal error:  Call to undefined method PDOStatement::close() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 29
+[20-Feb-2017 05:56:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 30
+[20-Feb-2017 05:56:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:30) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 17
+[20-Feb-2017 05:57:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 30
+[20-Feb-2017 05:57:20 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:30) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 17
+[20-Feb-2017 05:57:43 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 30
+[20-Feb-2017 05:57:43 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:30) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 17
+[20-Feb-2017 05:58:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 30
+[20-Feb-2017 05:58:04 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:30) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 17
+[20-Feb-2017 06:00:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 31
+[20-Feb-2017 06:00:40 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:30) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 17
+[20-Feb-2017 06:00:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 31
+[20-Feb-2017 06:00:53 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:30) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 17
+[20-Feb-2017 06:00:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 31
+[20-Feb-2017 06:00:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:30) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 17
+[20-Feb-2017 06:02:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 31
+[20-Feb-2017 06:02:10 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:30) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 17
+[20-Feb-2017 06:06:21 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:16) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 22
+[20-Feb-2017 06:06:44 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:31) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 22
+[20-Feb-2017 06:07:22 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:31) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 22
+[20-Feb-2017 06:07:41 America/Chicago] PHP Fatal error:  Call to undefined method PDOStatement::insert_id() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 28
+[20-Feb-2017 06:09:06 America/Chicago] PHP Fatal error:  Call to undefined method PDOStatement::lastInsertId() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 28
+[20-Feb-2017 06:10:53 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:47) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 22
+[20-Feb-2017 06:11:31 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:47) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 22
+[20-Feb-2017 06:11:37 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php:47) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 22
+[20-Feb-2017 06:13:51 America/Chicago] PHP Fatal error:  Call to undefined method PDOStatement::lastInsertId() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Documents.php on line 28
+[20-Feb-2017 06:28:35 America/Chicago] PHP Fatal error:  Call to undefined function explod() in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Documents.php on line 13
+[20-Feb-2017 09:06:54 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Emprunts.php:31) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Emprunts.php on line 21
+[20-Feb-2017 09:08:15 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Emprunts.php:31) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Emprunts.php on line 21
+[20-Feb-2017 09:19:19 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.Emprunts.php:31) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/add/Emprunts.php on line 21

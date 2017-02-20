@@ -75,9 +75,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div id="body">
 		<p>Ceci est le premier travail pour la discipline de base de données d'ISIMA ZZ2 - 2017</p>
 
-		<p>Pour avoir accès au système:</p>
+		<p>Pour avoir accès au système - OLD_VERSION - Version 1:</p>
 		<code><a href="index.php/tp1/documents">Gestion d'une 
 documentation technique - <span>beta v0.1</span></a></code>
+
+		<p>Pour avoir accès au système - NEW VERSION - Version 2:</p>
+		<code><a href="v2/Documents.php">Gestion d'une 
+documentation technique - <span>beta v2.1</span></a></code>
+
 
 		<p>Pour avoir accès à la documentation:</p>
 		<code><a href="https://github.com/isaiasfsilva/isima_base_donne_tp1/blob/master/documentation.pdf" target="_blank">documentation.pdf</a></code>

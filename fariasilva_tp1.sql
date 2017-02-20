@@ -29,7 +29,7 @@ CREATE TABLE `Documents` (
   `niv_config` tinyint(1) NOT NULL DEFAULT '0',
   `type` enum('Rapport','Lettre','Plan','Note','Contrat') COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `Documents` (
 
 LOCK TABLES `Documents` WRITE;
 /*!40000 ALTER TABLE `Documents` DISABLE KEYS */;
-INSERT INTO `Documents` VALUES (25,2005,'Les trois mousquetaires',1,'Lettre'),(29,2009,'dfdf',0,'Plan'),(30,2009,'teste sen',0,'Lettre');
+INSERT INTO `Documents` VALUES (25,2007,'Les trois mousquetaires',1,'Lettre'),(29,2009,'dfdf',0,'Plan'),(31,2017,'NEWBOOK',0,'Rapport'),(32,2017,'NEW BOOK 2',0,'Rapport'),(33,2017,'dddddddd',0,'Rapport'),(34,2017,'dddddddd',0,'Rapport'),(35,2017,'dddddddd',0,'Rapport'),(36,2017,'banana',0,'Rapport'),(37,2017,'banana',0,'Rapport'),(38,2017,'maÃ§a',0,'Rapport'),(39,2017,'maÃ§a',0,'Rapport'),(40,2017,'rttttttttt',0,'Rapport'),(41,2017,'eeeeeeeeeeee',0,'Rapport'),(42,2017,'ddddd',0,'Rapport'),(43,2017,'wewewe',0,'Rapport'),(44,2017,'fgffg',0,'Rapport'),(45,2017,'sdsd',0,'Rapport'),(46,2017,'sdsd',0,'Rapport'),(47,2017,'eerer',0,'Rapport'),(48,2017,'eerer',0,'Rapport'),(49,2017,'eerer',0,'Rapport'),(50,2017,'sdsdsd',0,'Rapport'),(51,2017,'222222222222',0,'Rapport'),(52,2017,'dfdf',0,'Rapport'),(53,2017,'ook',0,'Rapport'),(54,2017,'isaias',0,'Rapport'),(55,2017,'uuuuuuuuuu',0,'Rapport'),(56,2017,'rato',0,'Rapport'),(57,2017,'ba',0,'Rapport'),(58,2017,'ererer',0,'Rapport'),(59,2017,'bu ',0,'Rapport'),(60,2017,'ffff',0,'Rapport'),(61,2017,'caca',0,'Rapport');
 /*!40000 ALTER TABLE `Documents` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -83,13 +83,13 @@ DROP TABLE IF EXISTS `Emprunt`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Emprunt` (
   `id_doc` int(11) NOT NULL,
-  `date_debut` date NOT NULL DEFAULT '0000-00-00',
-  `date_fin` date DEFAULT NULL,
   `id_user` int(11) NOT NULL,
-  PRIMARY KEY (`id_doc`,`date_debut`),
+  `date_debut` date NOT NULL,
+  `date_fin` date NOT NULL,
+  PRIMARY KEY (`id_doc`,`id_user`,`date_debut`),
   KEY `id_user` (`id_user`),
-  CONSTRAINT `Emprunt_ibfk_1` FOREIGN KEY (`id_doc`) REFERENCES `Documents` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `Emprunt_ibfk_2` FOREIGN KEY (`id_user`) REFERENCES `Utilisateur` (`id`)
+  CONSTRAINT `Emprunt_ibfk_2` FOREIGN KEY (`id_user`) REFERENCES `Utilisateur` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `Emprunt_ibfk_1` FOREIGN KEY (`id_doc`) REFERENCES `Documents` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -99,7 +99,7 @@ CREATE TABLE `Emprunt` (
 
 LOCK TABLES `Emprunt` WRITE;
 /*!40000 ALTER TABLE `Emprunt` DISABLE KEYS */;
-INSERT INTO `Emprunt` VALUES (25,'2017-02-15','2017-02-16',10);
+INSERT INTO `Emprunt` VALUES (25,10,'2017-02-20','2017-02-21'),(25,10,'2017-02-22','2017-02-15'),(33,10,'2017-02-20','2017-02-22');
 /*!40000 ALTER TABLE `Emprunt` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -146,7 +146,7 @@ CREATE TABLE `Livres_auteurs` (
   `ordre` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_doc`,`id_user`),
   KEY `Livres_auteurs_ibfk_2` (`id_user`),
-  CONSTRAINT `Livres_auteurs_ibfk_1` FOREIGN KEY (`id_doc`) REFERENCES `Documents` (`id`),
+  CONSTRAINT `Livres_auteurs_ibfk_1` FOREIGN KEY (`id_doc`) REFERENCES `Documents` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `Livres_auteurs_ibfk_2` FOREIGN KEY (`id_user`) REFERENCES `Utilisateur` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -157,7 +157,7 @@ CREATE TABLE `Livres_auteurs` (
 
 LOCK TABLES `Livres_auteurs` WRITE;
 /*!40000 ALTER TABLE `Livres_auteurs` DISABLE KEYS */;
-INSERT INTO `Livres_auteurs` VALUES (25,10,0),(29,10,0),(30,10,0);
+INSERT INTO `Livres_auteurs` VALUES (25,10,1),(25,18,0),(29,10,0),(53,10,0),(53,18,1),(54,10,0),(54,18,1),(55,10,0),(55,18,1),(56,10,1),(56,18,0),(57,10,1),(57,18,0),(58,10,0),(58,18,1),(59,10,1),(59,18,0),(60,10,1),(60,18,0),(61,10,0),(61,18,1);
 /*!40000 ALTER TABLE `Livres_auteurs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -174,7 +174,7 @@ CREATE TABLE `Utilisateur` (
   `prenom` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `config` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -183,13 +183,31 @@ CREATE TABLE `Utilisateur` (
 
 LOCK TABLES `Utilisateur` WRITE;
 /*!40000 ALTER TABLE `Utilisateur` DISABLE KEYS */;
-INSERT INTO `Utilisateur` VALUES (10,'TZITAS','ANDERSON',1),(11,'FARIA','Isaías',0);
+INSERT INTO `Utilisateur` VALUES (10,'TZITASttj','ANDERSON',0),(18,'FARIA SILVA','isaias',0);
 /*!40000 ALTER TABLE `Utilisateur` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
 -- Dumping routines for database 'dvjgo267_fariasilva_tp1_basedonee_isima'
 --
+/*!50003 DROP FUNCTION IF EXISTS `emprunts_today` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = latin1 */ ;
+/*!50003 SET character_set_results = latin1 */ ;
+/*!50003 SET collation_connection  = latin1_swedish_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = '' */ ;
+DELIMITER ;;
+CREATE DEFINER=`dvjgo267_fariasi`@`localhost` FUNCTION `emprunts_today`() RETURNS int(11)
+    READS SQL DATA
+BEGIN DECLARE t INT; SET t=0; SELECT COUNT(*) INTO t FROM Emprunt WHERE date_debut=CURDATE(); RETURN t; END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!50003 DROP FUNCTION IF EXISTS `test_perm` */;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
@@ -207,6 +225,57 @@ DELIMITER ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
 /*!50003 SET character_set_results = @saved_cs_results */ ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `number_docs` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = latin1 */ ;
+/*!50003 SET character_set_results = latin1 */ ;
+/*!50003 SET collation_connection  = latin1_swedish_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = '' */ ;
+DELIMITER ;;
+CREATE DEFINER=`dvjgo267_fariasi`@`localhost` PROCEDURE `number_docs`()
+BEGIN SELECT COUNT(*) as ndocs FROM Documents; END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `number_emprunt` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = latin1 */ ;
+/*!50003 SET character_set_results = latin1 */ ;
+/*!50003 SET collation_connection  = latin1_swedish_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = '' */ ;
+DELIMITER ;;
+CREATE DEFINER=`dvjgo267_fariasi`@`localhost` PROCEDURE `number_emprunt`()
+BEGIN SELECT COUNT(*) as nemp FROM Emprunt; END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `number_users` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = latin1 */ ;
+/*!50003 SET character_set_results = latin1 */ ;
+/*!50003 SET collation_connection  = latin1_swedish_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = '' */ ;
+DELIMITER ;;
+CREATE DEFINER=`dvjgo267_fariasi`@`localhost` PROCEDURE `number_users`()
+BEGIN SELECT COUNT(*) as nusers FROM Utilisateur; END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -217,4 +286,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-02-15  8:39:57
+-- Dump completed on 2017-02-20 14:30:14

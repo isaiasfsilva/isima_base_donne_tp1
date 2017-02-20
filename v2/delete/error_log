@@ -1,0 +1,29 @@
+[20-Feb-2017 04:41:21 America/Chicago] PHP Warning:  include_once(dbconfig.php): failed to open stream: No such file or directory in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php on line 2
+[20-Feb-2017 04:41:21 America/Chicago] PHP Warning:  include_once(): Failed opening 'dbconfig.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php on line 2
+[20-Feb-2017 04:41:21 America/Chicago] PHP Warning:  include_once(header.php): failed to open stream: No such file or directory in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php on line 13
+[20-Feb-2017 04:41:21 America/Chicago] PHP Warning:  include_once(): Failed opening 'header.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php on line 13
+[20-Feb-2017 04:41:21 America/Chicago] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php on line 56
+[20-Feb-2017 04:41:40 America/Chicago] PHP Warning:  include_once(dbconfig.php): failed to open stream: No such file or directory in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php on line 2
+[20-Feb-2017 04:41:40 America/Chicago] PHP Warning:  include_once(): Failed opening 'dbconfig.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php on line 2
+[20-Feb-2017 04:41:40 America/Chicago] PHP Warning:  include_once(header.php): failed to open stream: No such file or directory in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php on line 13
+[20-Feb-2017 04:41:40 America/Chicago] PHP Warning:  include_once(): Failed opening 'header.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php on line 13
+[20-Feb-2017 04:41:40 America/Chicago] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php on line 56
+[20-Feb-2017 04:44:07 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dvjgo267_fariasilva_tp1_basedonee_isima.tbl_users' doesn't exist' in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php:61
+Stack trace:
+#0 /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php(61): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php on line 61
+[20-Feb-2017 04:46:48 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`dvjgo267_fariasilva_tp1_basedonee_isima`.`Livres_auteurs`, CONSTRAINT `Livres_auteurs_ibfk_2` FOREIGN KEY (`id_user`) REFERENCES `Utilisateur` (`id`))' in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.utilisateur.php:66
+Stack trace:
+#0 /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.utilisateur.php(66): PDOStatement->execute()
+#1 /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php(11): utilisateur->delete('10')
+#2 {main}
+  thrown in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.utilisateur.php on line 66
+[20-Feb-2017 04:48:48 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`dvjgo267_fariasilva_tp1_basedonee_isima`.`Livres_auteurs`, CONSTRAINT `Livres_auteurs_ibfk_2` FOREIGN KEY (`id_user`) REFERENCES `Utilisateur` (`id`))' in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.utilisateur.php:66
+Stack trace:
+#0 /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.utilisateur.php(66): PDOStatement->execute()
+#1 /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php(11): utilisateur->delete('10')
+#2 {main}
+  thrown in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.utilisateur.php on line 66
+[20-Feb-2017 04:54:49 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dvjgo267/public_html/isima_base_donne_tp1/v2/classes/class.utilisateur.php:72) in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php on line 12
+[20-Feb-2017 04:55:21 America/Chicago] PHP Fatal error:  Class 'utilisateur' not found in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/delete/utilisateur.php on line 5

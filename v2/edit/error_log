@@ -1,0 +1,14 @@
+[20-Feb-2017 04:29:33 America/Chicago] PHP Warning:  include_once(dbconfig.php): failed to open stream: No such file or directory in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/utilisateur.php on line 2
+[20-Feb-2017 04:29:33 America/Chicago] PHP Warning:  include_once(): Failed opening 'dbconfig.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/utilisateur.php on line 2
+[20-Feb-2017 04:29:33 America/Chicago] PHP Fatal error:  Call to a member function getID() on a non-object in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/utilisateur.php on line 28
+[20-Feb-2017 04:29:49 America/Chicago] PHP Fatal error:  Call to a member function getID() on a non-object in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/utilisateur.php on line 28
+[20-Feb-2017 04:35:01 America/Chicago] PHP Fatal error:  Class 'utilisateur' not found in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/utilisateur.php on line 4
+[20-Feb-2017 06:43:33 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/Documents.php:160
+Stack trace:
+#0 /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/Documents.php(160): PDOStatement->execute()
+#1 {main}
+  thrown in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/Documents.php on line 160
+[20-Feb-2017 07:08:14 America/Chicago] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/Documents.php on line 116
+[20-Feb-2017 07:08:14 America/Chicago] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/Documents.php on line 116
+[20-Feb-2017 07:08:21 America/Chicago] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/Documents.php on line 116
+[20-Feb-2017 07:08:21 America/Chicago] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/Documents.php on line 116
