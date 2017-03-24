@@ -1,3 +1,0 @@
-
-[15-Feb-2017 11:49:01 Europe/Paris] PHP Fatal error:  Call to undefined function site_url() in /home/dvjgo267/public_html/isima_base_donne_tp1/application/views/welcome_message.php on line 79
-[15-Feb-2017 11:49:03 Europe/Paris] PHP Fatal error:  Call to undefined function site_url() in /home/dvjgo267/public_html/isima_base_donne_tp1/application/views/welcome_message.php on line 79
