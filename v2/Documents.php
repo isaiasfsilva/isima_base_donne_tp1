@@ -28,6 +28,7 @@ $Documents = new Documents($DB_con);
      <th colspan="2" align="center">Actions</th>
      </tr>
      <?php
+
      	$query = "SELECT Documents.id, Documents.anee, Documents.titre, Documents.type, Documents.niv_config, GROUP_CONCAT(Utilisateur.nom ORDER BY Livres_auteurs.ordre SEPARATOR ', ') auteurs FROM Documents LEFT JOIN Livres_auteurs ON Documents.id = Livres_auteurs.id_doc INNER JOIN Utilisateur ON Livres_auteurs.id_user = Utilisateur.id GROUP BY Documents.id";       
 		$records_per_page=50;
 
