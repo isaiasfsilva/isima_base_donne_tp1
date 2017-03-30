@@ -66,7 +66,7 @@ else if(isset($_GET['failure']))
         </tr>
  
         <tr>
-            <td>Config</td>
+            <td>Status</td>
             <td>
                 <select name="config" class='form-control' required>
                   <option value="0">Inactif</option>

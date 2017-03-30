@@ -29,7 +29,7 @@ CREATE TABLE `Documents` (
   `niv_config` tinyint(1) NOT NULL DEFAULT '0',
   `type` enum('Rapport','Lettre','Plan','Note','Contrat') COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `Documents` (
 
 LOCK TABLES `Documents` WRITE;
 /*!40000 ALTER TABLE `Documents` DISABLE KEYS */;
-INSERT INTO `Documents` VALUES (25,2007,'Les trois mousquetaires',1,'Lettre'),(29,2009,'dfdf',0,'Plan'),(31,2017,'NEWBOOK',0,'Rapport'),(32,2017,'NEW BOOK 2',0,'Rapport'),(33,2017,'dddddddd',0,'Rapport'),(34,2017,'dddddddd',0,'Rapport'),(35,2017,'dddddddd',0,'Rapport'),(36,2017,'banana',0,'Rapport'),(37,2017,'banana',0,'Rapport'),(38,2017,'maÃ§a',0,'Rapport'),(39,2017,'maÃ§a',0,'Rapport'),(40,2017,'rttttttttt',0,'Rapport'),(41,2017,'eeeeeeeeeeee',0,'Rapport'),(42,2017,'ddddd',0,'Rapport'),(43,2017,'wewewe',0,'Rapport'),(44,2017,'fgffg',0,'Rapport'),(45,2017,'sdsd',0,'Rapport'),(46,2017,'sdsd',0,'Rapport'),(47,2017,'eerer',0,'Rapport'),(48,2017,'eerer',0,'Rapport'),(49,2017,'eerer',0,'Rapport'),(50,2017,'sdsdsd',0,'Rapport'),(51,2017,'222222222222',0,'Rapport'),(52,2017,'dfdf',0,'Rapport'),(53,2017,'ook',0,'Rapport'),(54,2017,'isaias',0,'Rapport'),(55,2017,'uuuuuuuuuu',0,'Rapport'),(56,2017,'rato',0,'Rapport'),(57,2017,'ba',0,'Rapport'),(58,2017,'ererer',0,'Rapport'),(59,2017,'bu ',0,'Rapport'),(60,2017,'ffff',0,'Rapport'),(61,2017,'caca',0,'Rapport');
+INSERT INTO `Documents` VALUES (25,2007,'Les trois mousquetaires',1,'Lettre'),(31,2017,'NEWBOOK',0,'Rapport'),(32,2017,'NEW BOOK 2',0,'Rapport'),(33,2017,'dddddddd',0,'Rapport'),(34,2017,'dddddddd',0,'Rapport'),(35,2017,'dddddddd',0,'Rapport'),(36,2017,'banana',0,'Rapport'),(37,2017,'banana',0,'Rapport'),(38,2017,'maÃ§a',0,'Rapport'),(39,2017,'maÃ§a',0,'Rapport'),(40,2017,'rttttttttt',0,'Rapport'),(41,2017,'eeeeeeeeeeee',0,'Rapport'),(42,2017,'ddddd',0,'Rapport'),(43,2017,'wewewe',0,'Rapport'),(44,2017,'fgffg',0,'Rapport'),(45,2017,'sdsd',0,'Rapport'),(46,2017,'sdsd',0,'Rapport'),(47,2017,'eerer',0,'Rapport'),(48,2017,'eerer',0,'Rapport'),(49,2017,'eerer',0,'Rapport'),(50,2017,'sdsdsd',0,'Rapport'),(51,2017,'222222222222',0,'Rapport'),(52,2017,'dfdf',0,'Rapport'),(62,2017,'4444',0,'Rapport');
 /*!40000 ALTER TABLE `Documents` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -99,7 +99,7 @@ CREATE TABLE `Emprunt` (
 
 LOCK TABLES `Emprunt` WRITE;
 /*!40000 ALTER TABLE `Emprunt` DISABLE KEYS */;
-INSERT INTO `Emprunt` VALUES (25,10,'2017-02-20','2017-02-21'),(25,10,'2017-02-22','2017-02-15'),(33,10,'2017-02-20','2017-02-22');
+INSERT INTO `Emprunt` VALUES (25,10,'2017-02-20','2017-02-21'),(25,10,'2017-02-21','2017-02-22');
 /*!40000 ALTER TABLE `Emprunt` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -157,7 +157,7 @@ CREATE TABLE `Livres_auteurs` (
 
 LOCK TABLES `Livres_auteurs` WRITE;
 /*!40000 ALTER TABLE `Livres_auteurs` DISABLE KEYS */;
-INSERT INTO `Livres_auteurs` VALUES (25,10,1),(25,18,0),(29,10,0),(53,10,0),(53,18,1),(54,10,0),(54,18,1),(55,10,0),(55,18,1),(56,10,1),(56,18,0),(57,10,1),(57,18,0),(58,10,0),(58,18,1),(59,10,1),(59,18,0),(60,10,1),(60,18,0),(61,10,0),(61,18,1);
+INSERT INTO `Livres_auteurs` VALUES (25,10,1),(25,18,0);
 /*!40000 ALTER TABLE `Livres_auteurs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -183,7 +183,7 @@ CREATE TABLE `Utilisateur` (
 
 LOCK TABLES `Utilisateur` WRITE;
 /*!40000 ALTER TABLE `Utilisateur` DISABLE KEYS */;
-INSERT INTO `Utilisateur` VALUES (10,'TZITASttj','ANDERSON',0),(18,'FARIA SILVA','isaias',0);
+INSERT INTO `Utilisateur` VALUES (10,'TZITAS','ANDERSON',0),(18,'FARIA SILVA','isaias',0);
 /*!40000 ALTER TABLE `Utilisateur` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -286,4 +286,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-02-20 14:30:14
+-- Dump completed on 2017-03-30 10:35:30

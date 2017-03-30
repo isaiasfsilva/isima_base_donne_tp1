@@ -109,7 +109,7 @@ if(isset($_POST['btn-del']))
 else
 {
 	?>
-    <a href="<?php echo $url_site;?>/Emprunts.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i> &nbsp; Retourner</a>
+    <a href="<?php echo $url_site;?>Emprunts.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i> &nbsp; Retourner</a>
     <?php
 }
 ?>

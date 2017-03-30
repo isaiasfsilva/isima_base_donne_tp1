@@ -27,7 +27,7 @@ $utilisateur = new utilisateur($DB_con);
      </tr>
      <?php
 		$query = "SELECT * FROM Utilisateur";       
-		$records_per_page=3;
+		$records_per_page=50;
 		$newquery = $utilisateur->paging($query,$records_per_page);
 		$utilisateur->dataview($newquery);
 	 ?>

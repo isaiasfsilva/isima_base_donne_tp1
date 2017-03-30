@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +11,11 @@
 
 	body {
 		background-color: #fff;
+		background-image: url('imgs/b.jpg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 		margin: 40px;
 		font: 13px/20px normal Helvetica, Arial, sans-serif;
 		color: #4F5155;
@@ -61,6 +65,8 @@
 		margin: 10px;
 		border: 1px solid #D0D0D0;
 		box-shadow: 0 0 8px #D0D0D0;
+		background-color: #fff;
+		opacity:0.8;
 	}
 
 	
@@ -75,13 +81,13 @@
 		<p>Ceci est le premier travail pour la discipline de base de données d'ISIMA ZZ2 - 2017</p>
 
 		
-		<p>Pour avoir accès au système - NEW VERSION - Version 2:</p>
+		<p>Pour avoir accès au système:</p>
 		<code><a href="v2/Documents.php">Gestion d'une 
 documentation technique - <span>beta v2.1</span></a></code>
 
 
 		<p>Pour avoir accès à la documentation:</p>
-		<code><a href="https://github.com/isaiasfsilva/isima_base_donne_tp1/blob/master/documentation.pdf" target="_blank">documentation.pdf</a></code>
+		<code><a href="documentation.pdf" target="_blank">documentation.pdf</a></code>
 
 		<p>Vous pouvez aussi visualiser le code dans le GitHub \o/:</p>
 		<code><a href="https://github.com/isaiasfsilva/isima_base_donne_tp1" target="_blank">https://github.com/isaiasfsilva/isima_base_donne_tp1</a></code>

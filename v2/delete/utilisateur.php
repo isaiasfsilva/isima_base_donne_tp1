@@ -104,7 +104,7 @@ if(isset($_GET['delete_id']))
 else
 {
 	?>
-    <a href="<?php echo $url_site;?>/utilisateur.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i> &nbsp; Retourner</a>
+    <a href="<?php echo $url_site;?>utilisateur.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i> &nbsp; Retourner</a>
     <?php
 }
 ?>

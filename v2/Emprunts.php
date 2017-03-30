@@ -26,9 +26,8 @@ $Emprunts = new Emprunts($DB_con);
      <th align="center">Actions</th>
      </tr>
      <?php
-     //SELECT GROUP_CONCAT(name SEPARATOR ' + ') AS order_summary FROM product WHERE product_id IN (13, 15, 16);
-		$query = "SELECT id_doc, id_user,nom, titre, date_debut, date_fin from Emprunt INNER JOIN Documents on (Documents.id=Emprunt.id_doc) INNER JOIN Utilisateur on (Utilisateur.id=Emprunt.id_user)";       
-		$records_per_page=3;
+     	$query = "SELECT id_doc, id_user,nom, titre, date_debut, date_fin from Emprunt INNER JOIN Documents on (Documents.id=Emprunt.id_doc) INNER JOIN Utilisateur on (Utilisateur.id=Emprunt.id_user)";       
+		$records_per_page=50;
 		$newquery = $Emprunts->paging($query,$records_per_page);
 		$Emprunts->dataview($newquery);
 	 ?>

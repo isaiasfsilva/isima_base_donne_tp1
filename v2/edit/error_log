@@ -12,3 +12,5 @@ Stack trace:
 [20-Feb-2017 07:08:14 America/Chicago] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/Documents.php on line 116
 [20-Feb-2017 07:08:21 America/Chicago] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/Documents.php on line 116
 [20-Feb-2017 07:08:21 America/Chicago] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/Documents.php on line 116
+[24-Mar-2017 05:32:33 America/Chicago] PHP Warning:  extract() expects parameter 1 to be array, boolean given in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/Documents.php on line 36
+[24-Mar-2017 05:32:44 America/Chicago] PHP Warning:  extract() expects parameter 1 to be array, boolean given in /home/dvjgo267/public_html/isima_base_donne_tp1/v2/edit/Documents.php on line 36
