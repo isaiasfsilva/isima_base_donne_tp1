@@ -28,13 +28,9 @@ $Documents = new Documents($DB_con);
      <th colspan="2" align="center">Actions</th>
      </tr>
      <?php
-<<<<<<< HEAD
      	$query = "SELECT Documents.id, Documents.anee, Documents.titre, Documents.type, Documents.niv_config, GROUP_CONCAT(Utilisateur.nom ORDER BY Livres_auteurs.ordre SEPARATOR ', ') auteurs FROM Documents LEFT JOIN Livres_auteurs ON Documents.id = Livres_auteurs.id_doc INNER JOIN Utilisateur ON Livres_auteurs.id_user = Utilisateur.id GROUP BY Documents.id";       
 		$records_per_page=50;
-=======
-   		$query = "SELECT Documents.id, Documents.anee, Documents.titre, Documents.type, Documents.niv_config, GROUP_CONCAT(Utilisateur.nom ORDER BY Livres_auteurs.ordre SEPARATOR ', ') auteurs FROM Documents LEFT JOIN Livres_auteurs ON Documents.id = Livres_auteurs.id_doc INNER JOIN Utilisateur ON Livres_auteurs.id_user = Utilisateur.id GROUP BY Documents.id";       
-		$records_per_page=3;
->>>>>>> 94b64998a0761555249c51a24d3e2ed7c12f6fa6
+
 		$newquery = $Documents->paging($query,$records_per_page);
 		$Documents->dataview($newquery);
 	 ?>
